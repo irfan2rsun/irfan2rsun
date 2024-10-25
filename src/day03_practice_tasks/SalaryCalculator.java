@@ -5,13 +5,14 @@ public class SalaryCalculator {
     public static void main(String[] args) {
 
         int weeklyHours = 45;
-        double hourlyRate = 50, grossPay = hourlyRate * weeklyHours * 52, federalTax = .26 * grossPay, stateTax = .06 * grossPay, totalTax = federalTax + stateTax, netIncome = grossPay - totalTax;
+        double hourlyRate = 50, grossPay = hourlyRate * weeklyHours * 52, federalTax = .26 * grossPay, stateTax = .06 * grossPay, totalTax = federalTax + stateTax, netIncome = grossPay - totalTax, monthlyNetIncome = netIncome / 12;
 
         System.out.println("Gross pay is: $" + grossPay +
                 "\nFederal tax is: $" + federalTax +
                 "\nState tax is: $" + stateTax +
                 "\nTotal tax is: $" + totalTax +
-                "\nNet income is: $" + netIncome);
+                "\nNet income is: $" + netIncome +
+                "\nMonthly net income is: $" + monthlyNetIncome) ;
 
     }
 
