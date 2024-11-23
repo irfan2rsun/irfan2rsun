@@ -18,7 +18,7 @@ public class StartsWithX {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter a word");
+        System.out.println("Input: ");
 
         String result = input.nextLine();
 
@@ -31,7 +31,7 @@ public class StartsWithX {
     static void replaceCh(String input){
 
         if (input.toLowerCase().startsWith("x")){
-            System.out.println("Output\n" + input.toLowerCase().replace('x','a'));
+            System.out.println("Output:\n" + input.toLowerCase().replaceFirst("x","a"));
         }else{
             System.out.println(input);
         }
