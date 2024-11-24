@@ -17,7 +17,7 @@ Print the first name, last name, and domain. First and last names should be prin
                    Last name: Federighi
                    Domain: apple
  */
-public class EmailTask2 {//Why is this code giving me java.lang.StringIndexOutOfBoundsException: begin 0, end 95, length 25
+public class EmailTask2 {// Why is this code giving me java.lang.StringIndexOutOfBoundsException: begin 0, end 95, length 25
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Input: ");
@@ -30,7 +30,7 @@ public class EmailTask2 {//Why is this code giving me java.lang.StringIndexOutOf
         int atSign = email.indexOf('@');
         int dot = email.indexOf('.');
 
-        String firstName = email.substring(0, underscore);
+        String firstName = email.substring(0, underscore); // Here is why as I put '_' instead of underscore
         String lastName = email.substring(underscore + 1, atSign);
         String domain = email.substring(atSign + 1, dot);
 
