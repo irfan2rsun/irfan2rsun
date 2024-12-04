@@ -32,6 +32,8 @@ public class AddressClients$ {
         address2.state = "Urumqi";
         address2.zipcode = "830000";
 
+        System.out.println(address2);
+
     }
 
 

@@ -22,7 +22,7 @@ public class Fibonacci {
 
         System.out.print(num1 + " " + num2 + " ");
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 5; i++) {
 
             next = num1 + num2;
             System.out.print(next + " ");
@@ -30,7 +30,6 @@ public class Fibonacci {
             num2 = next;
 
         }
-
 
     }
 
