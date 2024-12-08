@@ -61,17 +61,17 @@ public class Gym {
         String fitnessClass = "";
         if (age <= 20) {
             fitnessClass = "Teen co-ed class";
-        } else if (gender.equals("f") && experienceLevel>= 0 && age > 21) {
+        } else if (gender.startsWith("f") && experienceLevel < 2 && age > 21) {
             fitnessClass = "Women's beginner fitness class";
-        } else if (gender.equals("m") && experienceLevel>= 0 && age > 21) {
+        } else if (gender.startsWith("m") && experienceLevel < 2 && age > 21) {
             fitnessClass = "Men's beginner fitness class";
-        } else if (experienceLevel >= 2){
+        } else {
             fitnessClass = "co-ed fitness class";
         }
 
-        input.close();
-
         System.out.println("Thanks for completing the form, " + name + "! Get Fit gym recommend you check out our " + fitnessClass);
+
+        input.close();
 
     }
 
