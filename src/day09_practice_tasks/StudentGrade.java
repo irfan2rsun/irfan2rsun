@@ -1,4 +1,5 @@
 package day09_practice_tasks;
+
 public class StudentGrade {
     public static void main(String[] args) {
         // 4.1 Given two arrays with the same length:

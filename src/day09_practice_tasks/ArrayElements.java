@@ -1,7 +1,5 @@
 package day09_practice_tasks;
 
-import java.util.Arrays;
-
 public class ArrayElements {
     public static void main(String[] args) {
         // 1.1 Create an array of integers with a length of 100.
