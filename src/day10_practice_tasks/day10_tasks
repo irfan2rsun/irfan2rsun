@@ -23,7 +23,7 @@
 
 
 
-3. Create a class called DuplicateElements and write a program with the following specifications:
+*3. Create a class called DuplicateElements and write a program with the following specifications:
    3.1 Given an ArrayList, duplicate each element in the list.
 
 		 	Example:
@@ -34,7 +34,7 @@
 
 
 
-4. Create a class called CombineTwoArrays and write a program with the following specifications:
+*4. Create a class called CombineTwoArrays and write a program with the following specifications:
    4.1 Given two String arrays, combine them into one ArrayList.
 
                 Example:
@@ -57,7 +57,7 @@
 
 
 
-6. Create a class called MultiplyOddNumbers and write a program with the following specifications:
+*6. Create a class called MultiplyOddNumbers and write a program with the following specifications:
    6.1 Given an ArrayList, multiply each odd number by 2.
 
 				Example:
@@ -91,7 +91,7 @@
 
 
 
-9. Create a class called UniqueElements and write a program with the following specifications:
+*9. Create a class called UniqueElements and write a program with the following specifications:
    9.1 Given an ArrayList, display the unique elements without using any loops.
 
 			Example:
@@ -102,7 +102,7 @@
 
 
 
-10. Create a class called RemoveLetters and write a program with the following steps:
+*10. Create a class called RemoveLetters and write a program with the following steps:
     10.1 Given an ArrayList of characters, remove all the letters.
 
 			Example:
@@ -113,7 +113,7 @@
 
 
 
-11. Create a class called SameFirstAndLast and write a program with the following specifications:
+*11. Create a class called SameFirstAndLast and write a program with the following specifications:
     11.1 Given an ArrayList of strings, remove elements if the first and last characters of the string are the same.
 
 			Example:
