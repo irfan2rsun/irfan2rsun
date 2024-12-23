@@ -20,11 +20,17 @@ public class LocalResturant {
         restaurant.hireServer(servers);
         restaurant.hireChef(chefs);
 
+
         System.out.println(restaurant);
         System.out.println(restaurant.servers);
 
         restaurant.hireServer(new Server("Mary", 30, 20, false));
+        restaurant.hireChef(new Chef("Franky",35, 25, true));
+
+
+
         System.out.println(restaurant.servers);
+        System.out.println(restaurant.chefs);
     }
 
 }
