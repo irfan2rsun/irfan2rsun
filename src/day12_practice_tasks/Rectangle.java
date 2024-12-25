@@ -32,12 +32,17 @@ public class Rectangle {
     }
 
     //    Add a constructor that allows the user to set both fields during object creation.
-    public Rectangle() {
+/*    public Rectangle() {
         this.width = getWidth();
         this.length = getLength();
+    }*/
+
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
     }
 
-//    Actions:
+    //    Actions:
 
 
     //    calcArea(): Calculates and returns the area of the rectangle object.
@@ -52,7 +57,8 @@ public class Rectangle {
 
     //    toString(): Displays the width,length,area, and perimeter of the rectangle when the object is printed.
     public String toString() {
-        return "Width = " + width + " Length = " + length + " Area = " + calcArea() + " Perimeter = " + calcPerimeter();
+        return "Rectangle{" +
+                "Width = " + width + " Length = " + length + " Area = " + calcArea() + " Perimeter = " + calcPerimeter() + "}";
     }
 
 }
