@@ -38,8 +38,8 @@ public class Rectangle {
     }*/
 
     public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
+        setWidth(width);
+        setLength(length);
     }
 
     //    Actions:

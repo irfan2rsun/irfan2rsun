@@ -22,11 +22,9 @@ public class Candy {
     }
 
     public void setQuantity(int quantity) {
-        if (quantity <= 0) {
-            System.err.println("The quantity of candy cannot be set to zero or a negative value.");
-            System.exit(1);
+        if (quantity > 0) {
+            this.quantity = quantity;
         }
-        this.quantity = quantity;
     }
 
     public double getPrice() {
@@ -34,11 +32,9 @@ public class Candy {
     }
 
     public void setPrice(double price) {
-        if (price < 0) {
-            System.err.println("The price of candy cannot be set to a negative value.");
-            System.exit(1);
+        if (price >= 0) {
+            this.price = price;
         }
-        this.price = price;
     }
 
     public boolean isHasPeanuts() {
@@ -46,18 +42,14 @@ public class Candy {
     }
 
     public void setHasPeanuts(boolean hasPeanuts) {
-        if (hasPeanuts) {
-            System.out.println("doesn't have peanuts");
-        }
-        System.out.println("contain peanuts");
-        ;
+        this.hasPeanuts = hasPeanuts;
     }
 
     // Add a constructor that allows the user to set all fields during object creation.
     public Candy(String brand, int quantity, double price, boolean hasPeanuts) {
         this.brand = brand;
-        this.quantity = quantity;
-        this.price = price;
+        setQuantity(quantity); // Using set here as there is a requirement for quantity and price
+        setPrice(price);
         this.hasPeanuts = hasPeanuts;
     }
 
@@ -65,10 +57,9 @@ public class Candy {
     // toString():Displays the brand, unit price, and quantity when the object is printed.
     // If the price is zero,display "free" instead of 0.
     public String toString() {
-        if (getPrice() == 0) {
-        }
 
-        return "Candy {" + "Brand = " + getBrand() + " Unit Price = " + getPrice() + " Quantity = " + getQuantity() + " Has peanuts = " + isHasPeanuts() + "}";
+
+        return "Candy {" + "Brand = " + brand + ", Unit Price = " + (price == 0 ? "Free" : price) + ", Quantity = " + quantity + ", Has peanuts = " + hasPeanuts + "}";
 
     }
 
