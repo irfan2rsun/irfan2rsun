@@ -10,7 +10,6 @@ package extra_practices;
 7. use for loop to repeat 8 times
  */
 
-
 public class Fibonacci {
     public static void main(String[] args) {
 
