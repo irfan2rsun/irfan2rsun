@@ -140,7 +140,7 @@ Employee Task Requirements:
 
    Encapsulation All the fields.
        Condition:
-            Salary can not be zero orn egative
+            Salary can not be zero orn negative
 
    Add a constructor to initialize all fields.
 
