@@ -11,13 +11,16 @@ sameFirstLast([1, 2, 1]) → true
 public class SameFirstLast{
     public static void main(String[] args) {
 
-        int[] test1 ={1,2,1};
+        int[] test1 ={};
         boolean result = sameFirstLast(test1);
         System.out.println(result);
     }
 
 
     public static boolean sameFirstLast(int[] nums) {
+        if (nums.length<1){
+            return false;
+        }
         int firstNums = nums[0];
         int lastNums = nums[nums.length-1];
         return firstNums == lastNums;
