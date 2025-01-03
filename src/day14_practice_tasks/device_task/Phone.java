@@ -8,11 +8,11 @@ public abstract class Phone extends Device{
 
     // Extra Non-Abstract Methods:
     public void call(long phoneNum){
-        System.out.println("Calling " + phoneNum);
+        System.out.println(getBrand()+" " + getModel()+" calling " + phoneNum);
     }
 
     public void text(long phoneNum){
-        System.out.println("Texting " + phoneNum);
+        System.out.println(getBrand()+" " + getModel()+ " texting " + phoneNum);
     }
 
     // toString():

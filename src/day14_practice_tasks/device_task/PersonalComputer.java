@@ -10,7 +10,7 @@ public class PersonalComputer extends Computer{
 
     @Override
     public void turnOn() {
-        System.out.println(getBrand()+" is on");
+        System.out.println(getBrand()+ " is on");
     }
 
     @Override
