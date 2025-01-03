@@ -95,9 +95,9 @@ Device Task Requirements:
     - 'Iphone':
         - Extends Phone class.
         - Implements Downloadable & AppleApps interfaces.
-    - 'Samsung':
+- 'Iphone':
         - Extends Phone class.
-        - Implements Downloadable & AndroidApps interfaces.
+        - Implements Downloadable & AppleApps interfaces.
     - 'Google':
         - Extends Phone class.
         - Implements Downloadable & AndroidApps interfaces.
