@@ -1,8 +1,8 @@
 package day14_practice_tasks.car_task;
 // 9.2 Create two Subclasses of Car ('Tesla' and 'Nio') that Implement both AutoPark and AutoPilot Interfaces.
 public class Nio extends Car implements AutoPark, AutoPilot{
-    public Nio(String make, String model, int year, int price, String color) {
-        super(make, model, year, price, color);
+    public Nio(String model, int year, int price, String color) {
+        super(model, year, price, color);
     }
 
     @Override

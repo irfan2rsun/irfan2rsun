@@ -2,18 +2,12 @@ package day14_practice_tasks.car_task;
 // 1. Create an Abstract Class Named 'Car':
 public abstract class Car {
     // Variables
-    private final String make;
     private final String model;
     private final int year;
     private int price;
     private String color;
 
     // Encapsulate all fields.
-
-    public String getMake() {
-        return make;
-    }
-
     public String getModel() {
         return model;
     }
@@ -48,8 +42,8 @@ public abstract class Car {
 
     // Constructor: Initializes all fields.
 
-    public Car(String make, String model, int year, int price, String color) {
-        if (make == null || make.isEmpty() || model == null || model.isEmpty()) {
+    public Car(String model, int year, int price, String color) {
+        if (model == null || model.isEmpty()) {
             System.err.println("make, model, color must not be null or empty.");
             System.exit(1);
         }
@@ -57,7 +51,6 @@ public abstract class Car {
             System.err.println("Year must not be less than 1886.");
             System.exit(1);
         }
-        this.make = make;
         this.model = model;
         this.year = year;
         setPrice(price);
@@ -76,8 +69,7 @@ public abstract class Car {
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", year=" + year +
                 ", price=$" + price +
                 ", color='" + color + '\'' +
